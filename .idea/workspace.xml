@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9da3215d-9b86-4591-8e1b-503d32e1e8b1" name="Changes" comment="feat: Project structure implement">
-      <change afterPath="$PROJECT_DIR$/app/api/v1/endpoints/products.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/background.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/events.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/redis_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dependencies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="9da3215d-9b86-4591-8e1b-503d32e1e8b1" name="Changes" comment="feat: Project created due to requirements from Applifting&#10;&#10;TODO: Create saving offers to DB, Make Dockerfile and tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +100,7 @@
       <updated>1720553300526</updated>
       <workItem from="1720553307725" duration="1000" />
       <workItem from="1720619194954" duration="7673000" />
-      <workItem from="1720628707435" duration="13447000" />
+      <workItem from="1720628707435" duration="13778000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init files with project structure">
       <option name="closed" value="true" />
@@ -132,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720554203132</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: Project created due to requirements from Applifting&#10;&#10;TODO: Create saving offers to DB, Make Dockerfile and tests">
+      <option name="closed" value="true" />
+      <created>1720642725029</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720642725029</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,9 +136,10 @@
     <MESSAGE value="Gitignore first commit" />
     <MESSAGE value="feat: Init files with project structure" />
     <MESSAGE value="feat: Project structure implement" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Project structure implement" />
+    <MESSAGE value="feat: Project created due to requirements from Applifting&#10;&#10;TODO: Create saving offers to DB, Make Dockerfile and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Project created due to requirements from Applifting&#10;&#10;TODO: Create saving offers to DB, Make Dockerfile and tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/applifting_microservice$applifting_microservice.coverage" NAME="applifting-microservice Coverage Results" MODIFIED="1720641876631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/applifting_microservice$applifting_microservice.coverage" NAME="applifting-microservice Coverage Results" MODIFIED="1720642499367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
   </component>
 </project>
