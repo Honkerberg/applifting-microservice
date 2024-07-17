@@ -5,6 +5,7 @@ import uuid
 class OfferSchema(BaseModel):
     price: int
     items_in_stock: int
+    product_id: uuid.UUID
 
 
 class OfferCreate(OfferSchema):
@@ -17,6 +18,13 @@ class Offer(OfferSchema):
 
     class Config:
         from_attributes = True
+
+
+class OfferResponse(BaseModel):
+    id: uuid.UUID
+    price: int
+    items_in_stock: int
+    products: uuid.UUID
 
 
 class ProductSchema(BaseModel):
