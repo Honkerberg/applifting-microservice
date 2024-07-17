@@ -40,17 +40,13 @@ def delete_product(db: Session, product_id: UUID4):
     return db_product
 
 
-def create_offer(db: Session, offer: schemas.Offer):
-    db_offer = models.Offer(**offer.model_dump())
+def create_offer(db: Session, offer: schemas.OfferSchema):
+    db_offer = models.Offer(price=offer.price, items_in_stock=offer.items_in_stock, products=offer.product_id)
     db.add(db_offer)
     db.commit()
     db.refresh(db_offer)
     return db_offer
 
 
-def get_offers(db: Session, product_id: UUID4):
-    return db.query(models.Offer).filter(models.Offer.products == product_id).all()
-
-
-def get_product_by_id(db: Session, product_id: UUID4):
-    return db.query(models.Product).filter(models.Product.id == product_id).first()
+def get_offers(db: Session, skip: int = 0):
+    return db.query(models.Offer).offset(skip).all()
