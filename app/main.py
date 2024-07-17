@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.database import init_db
-from app.api.v1.endpoints import products
+from app.api.v1.endpoints import products, offers
 
 from contextlib import asynccontextmanager
 from app.events import fetch_and_create_offers
@@ -17,6 +17,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Applifting microservice app", version='0.1.0', lifespan=lifespan)
 app.include_router(products.router)
+app.include_router(offers.router)
 
 
 @app.get("/")
